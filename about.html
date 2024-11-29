@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanpromt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Kanprompt</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar1" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            สินค้า
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="nvdia.html">NVDIA</a></li>
+                            <li><a class="dropdown-item" href="amd.html">AMD</a></li>
+                            <li><a class="dropdown-item" href="intel.html">INTEL</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shipping.html" class="nav-link">บริการ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">เกี่ยวกับเรา</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ลงชื่อเข้าใช้
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">เข้าสู่ระบบ</a></li>
+                            <li><a class="dropdown-item" href="register.html">ลงทะเบียน</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">เข้าสู่ระบบ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">อีเมล</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="กรอกอีเมลของคุณ">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">รหัสผ่าน</label>
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="กรอกรหัสผ่านของคุณ">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">จดจำฉัน</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">เข้าสู่ระบบ</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-center w-100">ยังไม่มีบัญชี? <a href="register.html">สมัครสมาชิก</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar shadow-sm">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">
+                                <i class="bi bi-person-lines-fill"></i> ติดต่อเรา
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="bi bi-info-circle"></i> เกี่ยวกับเรา
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms.html">
+                                <i class="bi bi-file-earmark-text"></i> ข้อกำหนดและเงื่อนไข
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="privacy.html">
+                                <i class="bi bi-shield-lock"></i> นโยบายความเป็นส่วนตัว
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shipping.html">
+                                <i class="bi bi-box"></i> การจัดส่งสินค้า
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 col-lg-10 content">
+                <div class="container">
+                    <div class="container-body">
+                        <h2 id="contact">เกี่ยวกับเรา</h2>
+                        <p>ถ้าคุณชอบคอมพิวเตอร์ เราคือเพื่อนกัน
+                             ร้านจำหน่ายอุปกรณ์คอมพิวเตอร์  การ์ดจอ  ตามการใช้งานในงบประมาณที่ลูกค้าเลือกได้เอง
+                            
+                            ถ้าคุณชอบคอมพิวเตอร์ ราคาประหยัดต้องที่นี้เท่านั้น ในการซื้อคอมพิวเตอร์นั้น ผู้ซื้อควรจะต้องศึกษาและหาข้อมูลเกี่ยวกับสินค้าให้พอมีความรู้อยู่บ้างในเบื้องต้นก็ยังดี และก่อนที่จะตัดสินใจซื้อเครื่องคอมพิวเตอร์กับร้านไหนควรหาข้อมูลร้านค้าดี ๆ เสียก่อน เลือกร้านที่ไว้ใจได้ และหากจะให้ดีควรเลือกร้านที่มีการบริการหลังการขายที่ดี อาจจะเลือกดูข้อมูลจากรีวิวต่าง ๆ หรือตามเว็บไซต์อื่น ๆ ประกอบการตัดสินใจด้วย หากพูดถึงคอมพิวเตอร์แล้ว คนที่ไม่มีข้อมูลสินค้า ไม่มีข้อมูลร้านเลย ไม่มีความรู้ใด ๆ เลย การเลือกซื้อสินค้าคงเป็นไปได้ยาก หากไม่มีร้านที่ไว้ใจได้คอยให้การดูแล หากมีปัญหาเหล่านี้ มาปรึกษาเราได้ที่นี้ ได้เลย ยินดีให้คำปรึกษา รับประกันบริษัทเราเปิดขายมามากกว่า 1000 ปี !!
+                            
+                            สำหรับใครที่กำลังมองหาอุปกรณ์คอมพิวเตอร์แบบมือหนึ่งใหม่แกะกล่อง แวะเข้ามาชมหรือปรึกษากับทางร้านก่อนได้ ไม่ซื้อหาไม่ว่ากัน เข้ามาพูดคุยกันก่อน ทางร้านยินดีให้คำปรึกษาอย่างเต็มที่ ทั้งนี้ทางร้านยังมีบริการจัดสเปกคอมอีกด้วยเอาใจสาวกคอมประกอบ อยากได้อุปกรณ์ชิ้นไหน อัพเกรดส่วนไหน ปรึกษาเราได้ ไม่ว่าคุณจะจัดสเปกมาให้ทางร้านหาอุปกรณ์ประกอบเครื่องให้ หรือจะมาให้ทางร้านจัดสเปกให้ก็ได้ ทุกอย่างจะอยู่ภายใต้งบประมาณที่ลูกค้ากำหนด ไม่มีบังคับซื้อเพิ่มอย่างแน่นอน ทางร้านบริการด้วยความจริงใจ</p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-section">
+                    <h5 class="footer-title">Kanprompt</h5>
+                    <p>ช้อปสินค้าไอทีได้ง่าย ตลอด 24 ชั่วโมง</p>
+                </div>
+                <div class="col-md-3 footer-section">
+                    <h5 class="footer-title">เกี่ยวกับเรา</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">ติดต่อเรา</a></li>
+                        <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                        <li><a href="terms.html">เงื่อนไขการใช้งาน</a></li>
+                        <li><a href="privacy.html">นโยบายความเป็นส่วนตัว</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-section">
+                    <h5 class="footer-title">บริการลูกค้า</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="shipping.html">การจัดส่งสินค้า</a></li>
+                        <li><a href="shipping.html">การยกเลิกคำสั่งซื้อ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-section">
+                    <h5 class="footer-title">ติดต่อเรา</h5>
+                    <p>มหาวิทยาลัยศรีปทุม บางเขน : 2410/2 ถ.พหลโยธิน เขตจตุจักร กรุงเทพฯ 10900</p>
+                    <p>โทรศัพท์: 02 558 6888</p>
+                    <p>อีเมล: admissions@spu.ac.th</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>Copyright © 2024 Kanprompt</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
